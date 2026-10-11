@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Informasi & Panduan Kombel Halmahera Utara 2026</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9', // Cerulean Blue
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            500: '#f43f5e', // Rose
+                            600: '#e11d48',
+                        },
+                        sunshine: {
+                            400: '#fbbf24', // Amber
+                            500: '#f59e0b',
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom CSS for vibrant flair */
+        body {
+            background-color: #fafaf9; /* Warm off-white */
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08);
+        }
+        
+        /* Vibrant gradient text */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #0ea5e9, #8b5cf6, #ec4899);
+        }
+
+        /* Animated gradient background for hero */
+        .hero-bg {
+            background: linear-gradient(-45deg, #0ea5e9, #8b5cf6, #ec4899, #f59e0b);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .stagger-1 { animation-delay: 0.1s; opacity: 0; }
+        .stagger-2 { animation-delay: 0.3s; opacity: 0; }
+        .stagger-3 { animation-delay: 0.5s; opacity: 0; }
+        .stagger-4 { animation-delay: 0.7s; opacity: 0; }
+        
+        /* Interactive hover effects on cards */
+        .doc-card {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .doc-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Hero Section with Animated Gradient -->
+    <header class="relative hero-bg text-white overflow-hidden pb-32 pt-24 lg:pt-32">
+        <!-- Floating shapes for fun -->
+        <div class="absolute top-10 left-10 w-24 h-24 bg-white rounded-full mix-blend-overlay filter blur-xl opacity-40 animate-float"></div>
+        <div class="absolute bottom-20 right-10 w-32 h-32 bg-sunshine-400 rounded-full mix-blend-overlay filter blur-xl opacity-50 animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-400 rounded-full mix-blend-overlay filter blur-3xl opacity-30 animate-pulse-slow"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30 text-sm font-bold tracking-widest mb-6 animate-fade-in-up shadow-lg">
+                <i class="fas fa-rocket mr-2 text-sunshine-400"></i> PERIODE 2026
+            </span>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight animate-fade-in-up stagger-1 drop-shadow-md">
+                Pusat Informasi & Panduan <br class="hidden md:block"/> Komunitas Belajar
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 font-medium mb-8 animate-fade-in-up stagger-2 drop-shadow">
+                Kabupaten Halmahera Utara
+            </p>
+            <div class="w-32 h-1.5 bg-white mx-auto rounded-full mt-4 animate-fade-in-up stagger-3 shadow-sm opacity-80"></div>
+        </div>
+        
+        <!-- Wave shape divider at the bottom -->
+        <div class="absolute bottom-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-12 md:h-20" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.2,201.39,98.6,241.1,87.05,282.81,63.5,321.39,56.44Z" fill="#fafaf9"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Pengantar Section -->
+    <section class="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 mb-24 animate-fade-in-up stagger-4">
+        <div class="glass-card rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden">
+            <!-- Decorative corner accent -->
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-accent-500 to-transparent opacity-20"></div>
+            
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-8"><span class="text-gradient">Bergerak Bersama</span>, Majukan Pendidikan Halut</h2>
+            
+            <div class="space-y-5 text-slate-600 leading-relaxed text-lg md:text-xl text-justify md:text-center relative z-10">
+                <p>
+                    Selamat datang, para penggerak perubahan! 🌟 Transformasi pendidikan tidak bisa dilakukan sendirian; ia membutuhkan sinergi, kolaborasi, dan semangat juang yang ceria. Di tahun 2026 ini, kita melangkah bersama menuju <strong>Pendidikan Halmahera Utara 2030</strong> yang cemerlang.
+                </p>
+                <p>
+                    Komunitas Belajar (Kombel) adalah jantung dari ekosistem ini. Di sinilah ruang asyik kita untuk berbagi praktik baik, ngobrolin tantangan kelas, dan berinovasi. Halaman ini adalah <em>peta karun</em> Anda. Kami telah merangkum seluruh panduan, siklus pembelajaran inkuiri, hingga format SK agar Anda bisa fokus pada satu hal: <strong>Dampak nyata dan senyum murid di ruang kelas.</strong>
+                </p>
+                <div class="bg-gradient-to-r from-brand-50 to-purple-50 p-6 rounded-2xl border border-brand-100 mt-6 shadow-inner">
+                    <p class="font-semibold text-brand-900 italic">
+                        "Setiap dokumen yang Anda baca dan wujudkan adalah satu bata warna-warni yang menyusun jembatan masa depan bagi anak-anak Halmahera Utara. Mari mulai membaca, mari mulai bergerak!" 🚀
+                    </p>
+                </div>
+            </div>
+            
+            <a href="#dokumen" class="inline-flex items-center justify-center mt-10 px-8 py-4 text-lg font-bold rounded-full text-white bg-gradient-to-r from-brand-500 to-purple-600 hover:from-brand-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Mulai Eksplorasi Dokumen <i class="fas fa-chevron-down ml-3 animate-bounce"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Dokumen Categories -->
+    <main id="dokumen" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        
+        <div class="space-y-20">
+            
+            <!-- Category: Visi & Panduan Utama -->
+            <div class="relative">
+                <!-- Section Header -->
+                <div class="flex flex-col items-center text-center mb-10">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-400 to-brand-600 rounded-2xl flex items-center justify-center text-white shadow-lg mb-4 transform -rotate-6">
+                        <i class="fas fa-map-signs text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-extrabold text-slate-800">Visi & Panduan Utama</h3>
+                    <div class="w-20 h-1 bg-brand-500 rounded-full mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Card 1 -->
+                    <a href="https://drive.google.com/file/d/1gGCVOQ51PTMAy6pHY286IHVNuAKIVjtw/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl shadow-md border-b-4 border-blue-500 overflow-hidden flex flex-col h-full relative">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-blue-50 rounded-bl-full -z-0"></div>
+                        <div class="p-6 flex-grow flex flex-col relative z-10">
+                            <div class="text-blue-600 mb-5 bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+                                <i class="fas fa-route text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Peta Jalan Halut 2030</h4>
+                            <p class="text-slate-500 mb-6 flex-grow">Arah kebijakan dan target strategis pendidikan kita menuju masa depan gemilang.</p>
+                            <span class="inline-flex items-center justify-between text-blue-600 font-semibold bg-blue-50 px-4 py-2 rounded-lg group-hover:bg-blue-100 transition-colors">
+                                <span>Buka Dokumen</span> <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="https://drive.google.com/file/d/1GEc9eV5Esf-5ALtRlQrKSAVjo2A7xH0p/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl shadow-md border-b-4 border-purple-500 overflow-hidden flex flex-col h-full relative">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-purple-50 rounded-bl-full -z-0"></div>
+                        <div class="p-6 flex-grow flex flex-col relative z-10">
+                            <div class="text-purple-600 mb-5 bg-purple-100 w-14 h-14 rounded-full flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+                                <i class="fas fa-book-reader text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-purple-600 transition-colors">Panduan Kombel 2026</h4>
+                            <p class="text-slate-500 mb-6 flex-grow">Buku saku komprehensif cara jitu mengelola Komunitas Belajar yang efektif.</p>
+                            <span class="inline-flex items-center justify-between text-purple-600 font-semibold bg-purple-50 px-4 py-2 rounded-lg group-hover:bg-purple-100 transition-colors">
+                                <span>Buka Dokumen</span> <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="https://drive.google.com/file/d/15ykUZbyc2dC-xUcisX4CC-Jrl-VGc7xi/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl shadow-md border-b-4 border-pink-500 overflow-hidden flex flex-col h-full relative">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-pink-50 rounded-bl-full -z-0"></div>
+                        <div class="p-6 flex-grow flex flex-col relative z-10">
+                            <div class="text-pink-600 mb-5 bg-pink-100 w-14 h-14 rounded-full flex items-center justify-center group-hover:bg-pink-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+                                <i class="fas fa-tv text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-pink-600 transition-colors">Bahan Tayang Panduan</h4>
+                            <p class="text-slate-500 mb-6 flex-grow">Materi presentasi menarik yang siap pakai untuk sosialisasi Kombel di sekolah.</p>
+                            <span class="inline-flex items-center justify-between text-pink-600 font-semibold bg-pink-50 px-4 py-2 rounded-lg group-hover:bg-pink-100 transition-colors">
+                                <span>Buka Dokumen</span> <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="https://drive.google.com/file/d/1-LF5tUAKtcdT0B1fiao79gR2mfjD_FBY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl shadow-md border-b-4 border-orange-500 overflow-hidden flex flex-col h-full relative">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-orange-50 rounded-bl-full -z-0"></div>
+                        <div class="p-6 flex-grow flex flex-col relative z-10">
+                            <div class="text-orange-600 mb-5 bg-orange-100 w-14 h-14 rounded-full flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+                                <i class="fas fa-users-cog text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-orange-600 transition-colors">Pengurus Kombel 2026</h4>
+                            <p class="text-slate-500 mb-6 flex-grow">Daftar struktur dan tugas para pahlawan penggerak Kombel di daerah.</p>
+                            <span class="inline-flex items-center justify-between text-orange-600 font-semibold bg-orange-50 px-4 py-2 rounded-lg group-hover:bg-orange-100 transition-colors">
+                                <span>Buka Dokumen</span> <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Category: Siklus Inkuiri -->
+            <div class="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-3xl p-8 md:p-12 border border-indigo-100">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-indigo-500 rounded-xl flex items-center justify-center text-white shadow-md mr-4">
+                                <i class="fas fa-sync text-xl animate-spin" style="animation-duration: 4s;"></i>
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-slate-800">Siklus Inkuiri Kombel</h3>
+                        </div>
+                        <p class="text-indigo-800/70 max-w-2xl text-lg">Metode asyik untuk belajar bersama, memecahkan masalah kelas, dan menciptakan inovasi pembelajaran.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <a href="https://drive.google.com/file/d/12UGpYjc6VS2IiG-pae_pcbIGw4n1gFx7/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex items-start border-l-4 border-teal-500">
+                        <div class="flex-shrink-0 mr-6">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+                                <i class="fas fa-project-diagram text-2xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-teal-100 text-teal-800 text-xs font-bold rounded-full mb-2 uppercase tracking-wide">Konsep Dasar</span>
+                            <h4 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-teal-600 transition-colors">Siklus Inkuiri Kombel</h4>
+                            <p class="text-slate-500 text-sm">Pahami tahapan asyik identifikasi masalah, perencanaan, tindakan, dan refleksi bersama rekan sejawat.</p>
+                        </div>
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/1DPXnPsowWF6AGc6UUfg0_xFgjaxxJl6f/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex items-start border-l-4 border-amber-500">
+                        <div class="flex-shrink-0 mr-6">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+                                <i class="fas fa-lightbulb text-2xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full mb-2 uppercase tracking-wide">Praktik Nyata</span>
+                            <h4 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-amber-600 transition-colors">Contoh Siklus Inkuiri</h4>
+                            <p class="text-slate-500 text-sm">Intip studi kasus seru dan contoh penerapan siklus inkuiri yang berhasil di ruang kelas nyata.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Category: Format SK -->
+            <div>
+                <div class="flex flex-col items-center text-center mb-10">
+                    <div class="w-16 h-16 bg-gradient-to-br from-rose-400 to-rose-600 rounded-2xl flex items-center justify-center text-white shadow-lg mb-4 transform rotate-3">
+                        <i class="fas fa-file-signature text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-extrabold text-slate-800">Format SK (Surat Keputusan)</h3>
+                    <p class="mt-3 text-slate-500">Template siap edit di <span class="font-semibold text-blue-500"><i class="fab fa-google-drive mr-1"></i>Google Docs</span> untuk mempermudah administrasi Anda.</p>
+                    <div class="w-20 h-1 bg-rose-500 rounded-full mt-4"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- SK 1 -->
+                    <a href="https://docs.google.com/document/d/1jFY9y7S7Wr1_o1TYtmbOp5P6UOFHWVUA/edit?usp=drive_link&ouid=110129344286882465246&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:border-brand-300 relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-16 h-16 bg-blue-100 rounded-full z-0 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="bg-blue-100 text-blue-600 p-3 rounded-xl">
+                                    <i class="fas fa-school text-xl"></i>
+                                </div>
+                                <div class="text-blue-500 bg-blue-50 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i class="fas fa-external-link-alt text-sm"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-blue-600">SK Kombel Sekolah</h4>
+                            <p class="text-sm text-slate-500">Draf pembentukan Kombel di dalam satu satuan pendidikan (Internal).</p>
+                        </div>
+                    </a>
+
+                    <!-- SK 2 -->
+                    <a href="https://docs.google.com/document/d/143iU3_JguV4MX-yIuyVr9m6ji5IYvgfG/edit?usp=sharing&ouid=110129344286882465246&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:border-pink-300 relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-16 h-16 bg-pink-100 rounded-full z-0 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="bg-pink-100 text-pink-600 p-3 rounded-xl">
+                                    <i class="fas fa-shapes text-xl"></i>
+                                </div>
+                                <div class="text-pink-500 bg-pink-50 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i class="fas fa-external-link-alt text-sm"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-pink-600">SK Gugus TK/PAUD</h4>
+                            <p class="text-sm text-slate-500">Draf pembentukan Kombel tingkat Gugus khusus untuk jenjang TK/PAUD.</p>
+                        </div>
+                    </a>
+
+                    <!-- SK 3 -->
+                    <a href="https://docs.google.com/document/d/1yCVmnMP0hbOxUJy7yY94CJu-zMTewxtV/edit?usp=sharing&ouid=110129344286882465246&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:border-red-300 relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-16 h-16 bg-red-100 rounded-full z-0 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="bg-red-100 text-red-600 p-3 rounded-xl">
+                                    <i class="fas fa-child text-xl"></i>
+                                </div>
+                                <div class="text-red-500 bg-red-50 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i class="fas fa-external-link-alt text-sm"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-red-600">SK Gugus SD</h4>
+                            <p class="text-sm text-slate-500">Draf pembentukan Komunitas Belajar tingkat Gugus untuk jenjang SD.</p>
+                        </div>
+                    </a>
+
+                    <!-- SK 4 -->
+                    <a href="https://docs.google.com/document/d/1mGd4zJ7dO3-13KrpBhwiWIyrT0CL452U/edit?usp=sharing&ouid=110129344286882465246&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:border-indigo-300 relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-16 h-16 bg-indigo-100 rounded-full z-0 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="bg-indigo-100 text-indigo-600 p-3 rounded-xl">
+                                    <i class="fas fa-user-graduate text-xl"></i>
+                                </div>
+                                <div class="text-indigo-500 bg-indigo-50 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i class="fas fa-external-link-alt text-sm"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-indigo-600">SK Klaster SMP</h4>
+                            <p class="text-sm text-slate-500">Draf pembentukan Komunitas Belajar tingkat Klaster jenjang Sekolah Menengah Pertama.</p>
+                        </div>
+                    </a>
+
+                    <!-- SK 5 -->
+                    <a href="https://docs.google.com/document/d/1duS2s7Gmm0gVoKJdf5uxu6TA15TPyIWQ/edit?usp=sharing&ouid=110129344286882465246&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="doc-card group bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:border-emerald-300 relative overflow-hidden md:col-span-2 lg:col-span-1">
+                        <div class="absolute -right-4 -top-4 w-16 h-16 bg-emerald-100 rounded-full z-0 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="bg-emerald-100 text-emerald-600 p-3 rounded-xl">
+                                    <i class="fas fa-network-wired text-xl"></i>
+                                </div>
+                                <div class="text-emerald-500 bg-emerald-50 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i class="fas fa-external-link-alt text-sm"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-emerald-600">SK Antar Sekolah</h4>
+                            <p class="text-sm text-slate-500">Draf pembentukan Kombel kolaboratif lintas satuan pendidikan atau lintas wilayah.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 relative overflow-hidden">
+        <!-- Abstract shape in footer -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-brand-900 to-transparent opacity-50 rounded-bl-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="flex justify-center mb-8">
+                <div class="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center text-brand-400">
+                    <i class="fas fa-graduation-cap text-3xl"></i>
+                </div>
+            </div>
+            <h3 class="text-white text-2xl font-bold mb-3 tracking-wide">Dinas Pendidikan Halmahera Utara</h3>
+            <p class="mb-8 text-lg text-slate-300 max-w-2xl mx-auto">Mewujudkan Ekosistem Pendidikan Ceria yang Sepenuhnya Berpusat pada Murid</p>
+            
+            <div class="flex justify-center space-x-4 mb-8">
+                <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+                <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                <span class="w-2 h-2 rounded-full bg-pink-500"></span>
+                <span class="w-2 h-2 rounded-full bg-sunshine-500"></span>
+            </div>
+            
+            <p class="text-sm text-slate-500">
+                &copy; 2026 Pusat Informasi Komunitas Belajar Halmahera Utara.<br class="sm:hidden"> Dibuat Penuh Semangat untuk Kemajuan Pendidikan.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
